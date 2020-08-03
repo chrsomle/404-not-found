@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Recursive", sans-serif;
+  padding: 40px 80px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  align-self: flex-start;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 30px;
+}
+.card .illu {
+  min-width: 300px;
+  width: 40%;
+  margin: 0 10px;
+}
+.card .illu img {
+  width: 100%;
+}
+.card .info {
+  width: 40%;
+  font-size: 120%;
+}
+.card .info > * {
+  margin-bottom: 30px;
+}
+.card .info p {
+  width: 80%;
+}
+.card .info button {
+  text-transform: uppercase;
+  font-family: inherit;
+  padding: 16px 28px;
+  border: none;
+  border-radius: 2px;
+  background-color: #333;
+  color: white;
+}
+
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  header {
+    margin-bottom: 20px;
+  }
+
+  .card {
+    margin: 0;
+    gap: 20px;
+  }
+
+  .info {
+    min-width: 90%;
+    font-size: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
